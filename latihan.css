@@ -1,0 +1,6 @@
+body {
+  display: flex;
+  justify-content: center; /* Memindahkan ke tengah secara horizontal (kiri-kanan) */   /* Memindahkan ke tengah secara vertikal (atas-bawah) */
+  min-height: 100vh;      /* Memastikan tinggi body penuh satu layar */
+  margin: 0;
+}
