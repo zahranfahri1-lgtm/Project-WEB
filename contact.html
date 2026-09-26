@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trio Brew Cafe - Kontak</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Trio Brew Cafe - Kontak</title>
+  <script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={theme:{extend:{colors:{coffee:{50:'#fdfaf6',100:'#f5eadf',200:'#ead7c5',600:'#8a5635',700:'#6b4126',900:'#2f1d12'}},fontFamily:{sans:['Poppins','sans-serif']}}}}</script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-coffee-50 text-coffee-900">
+  <header class="sticky top-0 z-50 border-b border-coffee-900/10 bg-coffee-700/95 text-white shadow-lg backdrop-blur"><div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-8">
+    <a href="index.html" class="flex items-center gap-3 font-bold">
+    <img src="./Aset_image/logo cafe.jpeg" alt="Logo Trio Brew" class="h-11 w-11 rounded-full object-cover ring-2 ring-white/30">
+    <span>Trio Brew Cafe</span></a>
+    <nav class="hidden md:block">
+    <ul class="flex gap-2 text-sm font-medium"><li>
+    <a href="index.html" class="rounded-full px-4 py-2 hover:bg-white/15">Beranda</a></li><li><a href="menu.html" class="rounded-full px-4 py-2 hover:bg-white/15">Menu</a></li><li><a href="tentang.html" class="rounded-full px-4 py-2 hover:bg-white/15">Tentang</a></li><li><a href="contact.html" class="rounded-full bg-white/15 px-4 py-2">Kontak</a></li></ul></nav><details class="relative md:hidden"><summary class="cursor-pointer list-none rounded-lg border border-white/30 px-3 py-2">☰</summary><nav class="absolute right-0 mt-3 w-44 rounded-2xl bg-white p-2 text-coffee-900 shadow-xl"><a href="index.html" class="block rounded-xl px-4 py-3 hover:bg-coffee-100">Beranda</a><a href="menu.html" class="block rounded-xl px-4 py-3 hover:bg-coffee-100">Menu</a><a href="tentang.html" class="block rounded-xl px-4 py-3 hover:bg-coffee-100">Tentang</a><a href="contact.html" class="block rounded-xl bg-coffee-100 px-4 py-3">Kontak</a></nav></details></div></header>
+  <section
+  class="relative isolate overflow-hidden bg-cover bg-center px-5 py-20 text-center text-white"
+  style="
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url('./Aset_image/Gambar2.jpeg');
+  "
+>
 
-  <header>
-    <div class="logo">
-      <img src="./Aset_image/logo cafe.jpeg" alt="Logo Trio Brew" class="logo-img">
-      Trio Brew Cafe
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="tentang.html">Tentang</a></li>
-        <li><a href="contact.html">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Background Blur -->
+  <div
+    class="absolute inset-0 -z-10 scale-105 bg-cover bg-center blur-[4px]"
+    style="
+      background-image: url('./Aset_image/Gambar2.jpeg');
+    "
+  ></div>
 
-  <section class="about-banner">
-    <div class="about-banner-text">
-      <h1>Kunjungi <span>Trio Brew</span></h1>
-      <p>Datang, atau hubungi kami dulu kalau masih mikir-mikir.</p>
-    </div>
-  </section>
+  <!-- Content -->
+  <div class="relative z-10 mx-auto max-w-4xl">
 
-  <main class="content-area about-content">
+    <p
+      class="text-sm font-semibold uppercase tracking-[0.3em] text-white"
+    >
+      COME VISIT US
+    </p>
 
-    <section class="about-block about-visit">
-      <div class="visit-info">
-        <p class="about-label">Kunjungi Kami</p>
-        <dl>
-          <div><dt>Alamat</dt><dd>Teknik Untirta, Cilegon</dd></div>
-          <div><dt>Jam Buka</dt><dd>Setiap hari, 08.00 – 22.00</dd></div>
-          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/62895360936921" target="_blank" rel="noopener noreferrer">+62 895-3609-36921</a></dd></div>
-          <div><dt>Instagram</dt><dd><a href="https://instagram.com/triobrew" target="_blank" rel="noopener noreferrer">@triobrew</a></dd></div>
-        </dl>
-        <div class="btn-container">
-          <a href="menu.html" class="btn-primary">Lihat Menu</a>
-          <a href="https://www.google.com/maps/place/Fakultas+Teknik+UNTIRTA" class="btn-secondary" target="_blank" rel="noopener noreferrer">Buka di Google Maps</a>
-        </div>
-      </div>
-      <div class="visit-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507902.36921482923!2d105.45536041259767!3d-5.996484512993763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418e2782651571%3A0x249411dd80bfd66e!2sFakultas%20Teknik%20UNTIRTA!5e0!3m2!1sid!2sid!4v1789455910293!5m2!1sid!2sid"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin">
-        </iframe>
-      </div>
-    </section>
+    <h1
+      class="mt-3 text-4xl font-bold sm:text-5xl"
+    >
+      Kunjungi
+      <span class="text-[#e6c5a8]">
+        Trio Brew
+      </span>
+    </h1>
 
-  </main>
+    <p
+      class="mx-auto mt-4 max-w-2xl text-white/80"
+    >
+      Datang, atau hubungi kami dulu kalau masih mikir-mikir.
+    </p>
 
-  <footer>
-    <p>&copy; 2026 Trio Brew Cafe. Tempat Nyaman untuk Setiap Cerita.</p>
-  </footer>
+  </div>
 
-</body>
-</html>
+</section>
+  <main class="mx-auto max-w-6xl px-5 py-14 lg:px-8"><section class="grid overflow-hidden rounded-3xl bg-white shadow-2xl shadow-coffee-900/10 lg:grid-cols-2"><div class="p-7 sm:p-10"><p class="text-sm font-bold uppercase tracking-widest text-coffee-600">Kunjungi Kami</p><dl class="mt-7 space-y-6"><div><dt class="text-sm font-semibold text-coffee-900/50">Alamat</dt><dd class="mt-1 font-medium">Teknik Untirta, Cilegon</dd></div><div><dt class="text-sm font-semibold text-coffee-900/50">Jam Buka</dt><dd class="mt-1 font-medium">Setiap hari, 08.00 – 22.00</dd></div><div><dt class="text-sm font-semibold text-coffee-900/50">WhatsApp</dt><dd class="mt-1"><a class="font-medium text-coffee-700 underline decoration-coffee-200 underline-offset-4 hover:text-coffee-900" href="https://wa.me/62895360936921" target="_blank" rel="noopener noreferrer">+62 895-3609-36921</a></dd></div><div><dt class="text-sm font-semibold text-coffee-900/50">Instagram</dt><dd class="mt-1"><a class="font-medium text-coffee-700 underline decoration-coffee-200 underline-offset-4 hover:text-coffee-900" href="https://instagram.com/triobrew" target="_blank" rel="noopener noreferrer">@triobrew</a></dd></div></dl><div class="mt-8 flex flex-wrap gap-3"><a href="menu.html" class="rounded-full bg-coffee-700 px-6 py-3 font-semibold text-white transition hover:bg-coffee-900">Lihat Menu</a><a href="https://www.google.com/maps/place/Fakultas+Teknik+UNTIRTA" target="_blank" rel="noopener noreferrer" class="rounded-full border-2 border-coffee-700 px-6 py-3 font-semibold text-coffee-700 transition hover:bg-coffee-700 hover:text-white">Buka di Google Maps</a></div></div><div class="min-h-[380px] lg:min-h-full"><iframe class="h-full min-h-[380px] w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507902.36921482923!2d105.45536041259767!3d-5.996484512993763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418e2782651571%3A0x249411dd80bfd66e!2sFakultas%20Teknik%20UNTIRTA!5e0!3m2!1sid!2sid!4v1789455910293!5m2!1sid!2sid" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div></section></main>
+  <footer class="border-t border-coffee-900/10 bg-white px-5 py-6 text-center text-sm text-coffee-900/60">&copy; 2026 Trio Brew Cafe. Tempat Nyaman untuk Setiap Cerita.</footer>
+</body></html>

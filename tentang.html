@@ -4,26 +4,132 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trio Brew Cafe - Tentang Kami</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+     tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          coffee: {
+            50: "#fdfaf6",
+            100: "#f5eadf",
+            200: "#ead7c5",
+            600: "#8a5635",
+            700: "#6b4126",
+            900: "#2f1d12"
+          }
+        }
+      }
+    }
+  }
+  </script>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <div class="logo">
-      <img src="./Aset_image/logo cafe.jpeg" alt="Logo Trio Brew" class="logo-img">
-      Trio Brew Cafe
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="tentang.html">Tentang</a></li>
-        <li><a href="contact.html">Kontak</a></li>
+  <header class="sticky top-0 z-50 bg-[#754a30] text-white shadow-md">
+  <div class="mx-auto flex h-[70px] w-full items-center justify-between px-8 lg:px-[9.5%]">
+
+    <!-- Logo + Nama -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img
+        src="./Aset_image/logo cafe.jpeg"
+        alt="Logo Trio Brew"
+        class="h-12 w-12 rounded-full object-cover"
+      >
+
+      <span class="text-lg font-bold">
+        Trio Brew Cafe
+      </span>
+    </a>
+
+    <!-- Navbar -->
+    <nav class="hidden md:block">
+      <ul class="flex items-center gap-2">
+
+        <li>
+          <a
+            href="index.html"
+            class="rounded-full px-4 py-2 text-sm font-semibold transition hover:bg-white/10"
+          >
+            Beranda
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="menu.html"
+            class="rounded-full px-4 py-2 text-sm font-semibold transition hover:bg-white/10"
+          >
+            Menu
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="tentang.html"
+            class="rounded-full bg-white/20 px-4 py-2 text-sm font-semibold"
+          >
+            Tentang
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="contact.html"
+            class="rounded-full px-4 py-2 text-sm font-semibold transition hover:bg-white/10"
+          >
+            Kontak
+          </a>
+        </li>
+
       </ul>
     </nav>
-  </header>
 
+    <!-- Mobile -->
+    <details class="relative md:hidden">
+      <summary
+        class="cursor-pointer list-none rounded-lg border border-white/30 px-3 py-2"
+      >
+        ☰
+      </summary>
+
+      <nav class="absolute right-0 mt-3 w-44 rounded-xl bg-white p-2 text-[#754a30] shadow-xl">
+
+        <a
+          href="index.html"
+          class="block rounded-lg px-4 py-3 hover:bg-[#f5eadf]"
+        >
+          Beranda
+        </a>
+
+        <a
+          href="menu.html"
+          class="block rounded-lg px-4 py-3 hover:bg-[#f5eadf]"
+        >
+          Menu
+        </a>
+
+        <a
+          href="tentang.html"
+          class="block rounded-lg bg-[#f5eadf] px-4 py-3"
+        >
+          Tentang
+        </a>
+
+        <a
+          href="contact.html"
+          class="block rounded-lg px-4 py-3 hover:bg-[#f5eadf]"
+        >
+          Kontak
+        </a>
+
+      </nav>
+    </details>
+
+  </div>
+</header>
   <!-- Banner kecil, pakai teknik foto blur yang sama kayak hero Beranda -->
   <section class="about-banner">
     <div class="about-banner-text">
@@ -32,7 +138,7 @@
     </div>
   </section>
 
-  <main class="content-area about-content">
+  <main class="content-area about-content mx-auto w-full max-w-4xl">
 
     <section class="about-block">
       <p class="about-label">Sejarah Singkat</p>
@@ -87,7 +193,7 @@
         beneran hal yang kami suka bahas.
       </p>
 
-      <div class="about-features">
+      <div class="about-features flex flex-wrap gap-5">
         <div class="feature-pill">
           <span>☕</span>
           <div>
@@ -114,7 +220,7 @@
 
   </main>
 
-  <footer>
+  <footer class="mt-auto">
     <p>&copy; 2026 Trio Brew Cafe. Tempat Nyaman untuk Setiap Cerita.</p>
   </footer>
 
